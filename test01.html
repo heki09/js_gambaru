@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" id="cntBtn" value="count" onclick="count()">
+    <div id="imgdiv">
+        <img src="animal.png" alt="" srcset="">
+    </div>
+    <input type="button" value="img" id="chgImg" onclick="changeImg()">
+    <script>
+        var cnt = 0;
+        var btn = document.getElementById("cntBtn");
+        var img=document.getElementById("imgdiv");
+        function changeImg(){
+            img.innerHTML='<img src="pig.png">';
+
+        }
+
+        function count() {
+            cnt++;
+            btn.value=cnt;
+
+            
+        }
+    </script>
+
+</body>
+
+</html>
